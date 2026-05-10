@@ -1,1 +1,37 @@
+Windows Registry Editor Version 5.00
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox]
+"DisableTelemetry"=dword:00000001
+"DisableDefaultBrowserAgent"=dword:00000001
+"DisableFirefoxStudies"=dword:00000001
+"DisableFeedbackCommands"=dword:00000001
+"DisablePocket"=dword:00000001
+"DisableFirefoxScreenshots"=dword:00000001
+"DisableFirefoxAccounts"=dword:00000001
+"DisableFormHistory"=dword:00000001
+"NoDefaultBrowserCheck"=dword:00000001
+"OverrideFirstRunPage"=""
+"OverridePostUpdatePage"=""
+"PasswordManagerEnabled"=dword:00000000
+"OfferToSaveLogins"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\UserMessaging]
+"WhatsNew"=dword:00000000
+"ExtensionRecommendations"=dword:00000000
+"FeatureRecommendations"=dword:00000000
+"UrlbarInterventions"=dword:00000000
+"SkipOnboarding"=dword:00000001
+"MoreFromMozilla"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome]
+"Pocket"=dword:00000000
+"Snippets"=dword:00000000
+"TopSites"=dword:00000000
+"Highlights"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SearchBar]
+"SearchSuggestions"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DNSOverHTTPS]
+"Enabled"=dword:00000001
+"Fallback"=dword:00000001
