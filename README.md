@@ -26,22 +26,20 @@ Nyisd meg a Firefoxot és írd be a címsorba:
 
 Ha a lista aktív, a rendszered **Managed** állapotban van: a FoxDebloater átvette az irányítást a telemetria felett.
 
-## ⚖️ Jogi Nyilatkozat (Disclaimer)
+## ⚠️ Fontos (Disclaimer)
 
-A **FoxDebloater** használatával a felhasználó elismeri és elfogadja az alábbiakat:
-*   **Saját felelősség:** A szkriptet mindenki saját felelősségére futtatja. A Windows Registry módosítása kritikus beavatkozásnak minősül.
-*   **Garancia hiánya:** A szoftver "AS IS" (ahogy van) állapotban kerül közzétételre. Semmilyen kifejezett vagy hallgatólagos garancia nem vonatkozik a működésre vagy a hibamentességre.
-*   **Felelősség korlátozása:** A készítő semmilyen körülmények között nem tehető felelőssé a szkript használatából eredő közvetlen vagy közvetett károkért (ideértve az adatvesztést, rendszerösszeomlást vagy bármilyen hardveres/szoftveres meghibásodást).
+A szkriptet mindenki **saját felelősségére** használja. A Registry módosítása komoly beavatkozás, így garanciát semmire nem tudok vállalni. Nem tartozom felelősséggel semmilyen adatvesztésért vagy rendszerhibáért – én csak a kódot adom, te pedig eldöntöd, használod-e. 
 
-## 🔒 Felhasználási Feltételek és Licenc
+**Figyelem:** Ez a konfiguráció biztonsági okokból tiltja a Firefox beépített jelszókezelőjét és a Sync funkciót. Használj külső jelszókezelőt (pl. Bitwarden).
 
-Ez a projekt egyedi licenc alatt áll a szerzői jog védelme érdekében:
+## 🤝 Felhasználás és Közreműködés
 
-1.  **Személyes felhasználás:** Ingyenesen használható bármilyen magáncélú eszközön.
-2.  **Megnevezés kötelezettsége:** A kód bármilyen részletének felhasználása, publikálása vagy bemutatása esetén az eredeti szerzőt (FoxDebloater Project) jól látható módon meg kell nevezni, és linkelni kell az eredeti forrást.
-3.  **Továbbfejlesztés:** A kód módosítható, de a módosított változat csak akkor tehető közzé, ha az eredeti szerző megnevezésre kerül, és a módosított változat is ugyanezen feltételekkel (ingyenesen és megnevezéssel) marad elérhető.
-4.  **Kereskedelmi felhasználás:** A kód vagy annak bármely részének árusítása, fizetős szoftverbe építése vagy bármilyen pénzügyi haszonszerzésre irányuló felhasználása szigorúan TILOS.
-5.  **Visszaélés:** A projekt nevével vagy tartalmával való visszaélés, illetve sajátként való feltüntetése jogi következményeket vonhat maga után.
+Ez a projekt szabadon felhasználható és alakítható az alábbiak szerint:
+
+*   **Használd szabadon:** Nyugodtan alakítsd át, szabd személyre vagy fejleszd tovább.
+*   **Add tovább:** A módosított verziókat is kiadhatod, de kérlek, **említsd meg az eredeti projektet (FoxDebloater)** forrásként. Ennyi tisztelet jár a befektetett munkáért.
+*   **Maradjon ingyenes:** Ne add el másnak azt, amit én ingyen adtam neked.
+*   **Ne élj vissza vele:** Ne hirdesd sajátodként a módosítatlan kódot.
 
 ---
-**Copyright © 2026 - FoxDebloater Project. Minden jog fenntartva.**
+**FoxDebloater Project - 2026**
