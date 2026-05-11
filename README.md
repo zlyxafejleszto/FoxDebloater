@@ -1,45 +1,42 @@
 # FoxDebloater 🦊🚫
 
-A **FoxDebloater** egy agresszív, rendszerszintű Windows Registry optimalizáció, amelynek célja a Firefox teljes megtisztítása a telemetriától, a bloatware-től és a felesleges háttérfolyamatoktól. 
+A **FoxDebloater** egy rendszerszintű Windows Firefox hardening és debloat konfiguráció, amely a telemetria, a felesleges háttérszolgáltatások és a böngészőbe épített ajánlórendszerek minimalizálására készült.
 
-Míg a legtöbb megoldás csak profil szinten (`user.js`) babrál, a FoxDebloater a Windows Group Policy (GPO) réteget használja. Ez garantálja, hogy a beállítások **felülírhatatlanok** maradnak a böngésző frissítései után is.
+A megoldás nem profil-szintű (`user.js`) finomhangolásra épít, hanem Windows **Group Policy (GPO) / Registry policy layer** használatára, amely a beállításokat rendszer szinten érvényesíti és a böngésző frissítései után is megőrzi azokat.
 
 ## 🔥 Főbb funkciók
 
-*   **Zéró Telemetria:** Teljes körű adatgyűjtés-tiltás (Mozilla Studies, Crash Reporting, Default Browser Agent).
-*   **UI Tisztítás:** Pocket, Screenshots, Firefox Accounts és minden "More from Mozilla" marketing elem végleges kiirtása.
-*   **Adatvédelmi Hardening:** DNS-over-HTTPS kényszerítés, keresési javaslatok (keystroke logging) tiltása.
-*   **Rendszerszintű perzisztencia:** A beállítások minden felhasználói profilra érvényesek és immunisak a böngésző alaphelyzetbe állítására.
-*   **Maximális Sebesség:** Megszünteti a háttérben futó felesleges ellenőrzéseket és "ajánló" motorokat.
+- Teljes telemetria tiltás (Firefox Studies, Crash/Health Reporting, Default Browser Agent, Mozilla feedback szolgáltatások)
+- Böngésző bloat eltávolítás (Pocket, Screenshots, Firefox Accounts opcionális funkciók, ajánlórendszerek, “More from Mozilla” elemek)
+- Privacy hardening (DNS-over-HTTPS kényszerítés, Tracking Protection, fingerprinting és cryptomining védelem, search suggestion és URL bar tracking tiltása)
+- Rendszerszintű perzisztencia (HKLM policy szint, minden user profilra érvényes beállítások, frissítések és reset után is aktív kontroll)
+- Teljesítmény optimalizáció (háttér telemetria folyamatok kikapcsolása, recommendation engine eltávolítása, gyorsabb startup viselkedés)
 
 ## 🚀 Telepítés
 
-1. Töltsd le a `FoxDebloater.reg` fájlt.
-2. Futtasd **rendszergazdaként**.
-3. Hagyd jóvá a Registry módosítást.
+1. Töltsd le a `FoxDebloater.reg` fájlt.  
+2. Futtasd **rendszergazdai jogosultsággal**.  
+3. Hagyd jóvá a Registry módosításokat.  
 4. Indítsd újra a Firefoxot.
 
 ## 🛠 Ellenőrzés
 
-Nyisd meg a Firefoxot és írd be a címsorba:
-`about:policies`
+Nyisd meg a Firefox címsorát és írd be:
 
-Ha a lista aktív, a rendszered **Managed** állapotban van: a FoxDebloater átvette az irányítást a telemetria felett.
+about:policies
+
+Ha a policy-k aktívak, a böngésző “Managed by your organization” állapotban jelenik meg, ami azt jelenti, hogy a konfiguráció sikeresen érvényesült.
 
 ## ⚠️ Fontos (Disclaimer)
 
-A szkriptet mindenki **saját felelősségére** használja. A Registry módosítása komoly beavatkozás, így garanciát semmire nem tudok vállalni. Nem tartozom felelősséggel semmilyen adatvesztésért vagy rendszerhibáért – én csak a kódot adom, te pedig eldöntöd, használod-e. 
+Ez a konfiguráció rendszer szintű módosításokat végez a Windows Registry-ben és a Firefox policy rendszerében.
 
-**Figyelem:** Ez a konfiguráció biztonsági okokból tiltja a Firefox beépített jelszókezelőjét és a Sync funkciót. Használj külső jelszókezelőt (pl. Bitwarden).
+A használat teljes mértékben saját felelősségre történik. A szerző nem vállal felelősséget semmilyen közvetlen vagy közvetett kárért, beleértve a rendszerinstabilitást, funkcióvesztést, kompatibilitási problémákat, adatvesztést vagy harmadik féltől származó szolgáltatások hibáit.
 
-## 🤝 Felhasználás és Közreműködés
+A konfiguráció szándékosan korlátozhat bizonyos funkciókat, például a beépített jelszókezelőt, a Firefox Sync-et és egyes Mozilla szolgáltatásokat. Erősen ajánlott külső jelszókezelő (pl. Bitwarden vagy KeePassXC) használata.
 
-Ez a projekt szabadon felhasználható és alakítható az alábbiak szerint:
+## 🤝 Felhasználás és közreműködés
 
-*   **Használd szabadon:** Nyugodtan alakítsd át, szabd személyre vagy fejleszd tovább.
-*   **Add tovább:** A módosított verziókat is kiadhatod, de kérlek, **említsd meg az eredeti projektet (FoxDebloater)** forrásként. Ennyi tisztelet jár a befektetett munkáért.
-*   **Maradjon ingyenes:** Ne add el másnak azt, amit én ingyen adtam neked.
-*   **Ne élj vissza vele:** Ne hirdesd sajátodként a módosítatlan kódot.
+A projekt szabadon használható és módosítható. A módosított verziók publikálhatók, amennyiben az eredeti projekt (FoxDebloater) forrásként meg van említve. A projekt nem értékesíthető változatlan formában, és elvárt az eredeti szerzői munka korrekt feltüntetése minden származtatott változatban.
 
----
-**FoxDebloater Project - 2026**
+**FoxDebloater Project — 2026**
