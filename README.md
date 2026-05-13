@@ -6,18 +6,35 @@ A megoldás nem profil-szintű (`user.js`) finomhangolásra épít, hanem Window
 
 ## 🔥 Főbb funkciók
 
-- Teljes telemetria tiltás (Firefox Studies, Crash/Health Reporting, Default Browser Agent, Mozilla feedback szolgáltatások)
-- Böngésző bloat eltávolítás (Pocket, Screenshots, Firefox Accounts opcionális funkciók, ajánlórendszerek, “More from Mozilla” elemek)
-- Privacy hardening (DNS-over-HTTPS kényszerítés, Tracking Protection, fingerprinting és cryptomining védelem, search suggestion és URL bar tracking tiltása)
-- Rendszerszintű perzisztencia (HKLM policy szint, minden user profilra érvényes beállítások, frissítések és reset után is aktív kontroll)
-- Teljesítmény optimalizáció (háttér telemetria folyamatok kikapcsolása, recommendation engine eltávolítása, gyorsabb startup viselkedés)
+* Teljes telemetria tiltás (Firefox Studies, Crash/Health Reporting, Default Browser Agent, Mozilla feedback szolgáltatások)
+* Böngésző bloat eltávolítás (Pocket, Screenshots, Firefox Accounts opcionális funkciók, ajánlórendszerek, “More from Mozilla” elemek)
+* Privacy hardening (DNS-over-HTTPS kényszerítés, Tracking Protection, fingerprinting és cryptomining védelem, search suggestion és URL bar tracking tiltása)
+* Rendszerszintű perzisztencia (HKLM policy szint, minden user profilra érvényes beállítások, frissítések és reset után is aktív kontroll)
+* Teljesítmény optimalizáció (háttér telemetria folyamatok kikapcsolása, recommendation engine eltávolítása, gyorsabb startup viselkedés)
 
 ## 🚀 Telepítés
 
-1. Töltsd le a `FoxDebloater.reg` fájlt.  
-2. Futtasd **rendszergazdai jogosultsággal**.  
-3. Hagyd jóvá a Registry módosításokat.  
+1. Töltsd le a `FoxDebloater.reg` fájlt.
+2. Futtasd **rendszergazdai jogosultsággal**.
+3. Hagyd jóvá a Registry módosításokat.
 4. Indítsd újra a Firefoxot.
+
+## 🔄 Visszaállítás (FoxRestore.reg)
+
+A projekt tartalmaz egy `FoxRestore.reg` fájlt is, amely teljesen eltávolítja a FoxDebloater által létrehozott Firefox policy beállításokat a Windows Registry-ből.
+
+A restore script:
+
+* törli a `HKLM\SOFTWARE\Policies\Mozilla\Firefox` policy ágat,
+* visszaállítja a Firefox alapértelmezett működését,
+* megszünteti a “Managed by your organization” állapotot,
+* nem törli a profiladatokat, jelszavakat, könyvjelzőket vagy böngészési adatokat.
+
+### Restore használata
+
+1. Futtasd a `FoxRestore.reg` fájlt rendszergazdai jogosultsággal.
+2. Hagyd jóvá a Registry módosításokat.
+3. Indítsd újra a Firefoxot.
 
 ## 🛠 Ellenőrzés
 
@@ -33,7 +50,7 @@ Ez a konfiguráció rendszer szintű módosításokat végez a Windows Registry-
 
 A használat teljes mértékben saját felelősségre történik. A szerző nem vállal felelősséget semmilyen közvetlen vagy közvetett kárért, beleértve a rendszerinstabilitást, funkcióvesztést, kompatibilitási problémákat, adatvesztést vagy harmadik féltől származó szolgáltatások hibáit.
 
-A konfiguráció szándékosan korlátozhat bizonyos funkciókat, például a beépített jelszókezelőt, a Firefox Sync-et és egyes Mozilla szolgáltatásokat. Erősen ajánlott külső jelszókezelő (pl. Bitwarden vagy KeePassXC) használata.
+A konfiguráció szándékosan korlátozhat bizonyos funkciókat, például a beépített jelszókezelőt, a Firefox Sync-et és egyes Mozilla szolgáltatásokat. Erősen ajánlott külső jelszókezelő használata.
 
 ## 🤝 Felhasználás és közreműködés
 
