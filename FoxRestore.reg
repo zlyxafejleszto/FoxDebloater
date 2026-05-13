@@ -1,1 +1,21 @@
+Windows Registry Editor Version 5.00
 
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\UserMessaging]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DNSOverHTTPS]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\Permissions]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\PopupBlocking]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\EnableTrackingProtection]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\Cookies]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\ExtensionSettings]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\Preferences]
