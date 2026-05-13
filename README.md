@@ -65,4 +65,4 @@ MIT License — használd, módosítsd, oszd meg. Csak tüntesd fel, hogy innen 
 
 ---
 
-<p align="center">Made with 🦊 by <b>zlyxdev</b> — 2026</p>
+<p align="center">Made with 🦊 by <b>zlyxdev</b> — 2026 — All Rights Reserved</p>
