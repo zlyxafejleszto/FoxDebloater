@@ -52,8 +52,15 @@ A használat teljes mértékben saját felelősségre történik. A szerző nem 
 
 A konfiguráció szándékosan korlátozhat bizonyos funkciókat, például a beépített jelszókezelőt, a Firefox Sync-et és egyes Mozilla szolgáltatásokat. Erősen ajánlott külső jelszókezelő használata.
 
-## 🤝 Felhasználás és közreműködés
+## 🤝 Közreműködés
 
-A projekt szabadon használható és módosítható. A módosított verziók publikálhatók, amennyiben az eredeti projekt (FoxDebloater) forrásként meg van említve. A projekt nem értékesíthető változatlan formában, és elvárt az eredeti szerzői munka korrekt feltüntetése minden származtatott változatban.
+A projekt szabadon használható és módosítható. Pull request-ek és issue-k nyitása üdvözölt.
+
+A módosított verziók publikálhatók, amennyiben:
+- az eredeti projekt (FoxDebloater) forrásként fel van tüntetve,
+- az eredeti szerzői munka korrekt módon meg van említve minden származtatott változatban,
+- a [LICENSE](LICENSE) fájlban foglalt feltételek teljesülnek.
+
+A projekt változatlan formában történő értékesítése nem engedélyezett.
 
 **FoxDebloater Project — 2026**
